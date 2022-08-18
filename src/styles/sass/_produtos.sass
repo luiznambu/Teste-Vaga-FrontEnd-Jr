@@ -1,0 +1,65 @@
+.produtos
+    margin-top: 88px
+
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__menu
+        display: flex
+        gap: 10px
+
+        button
+            font-size: $font-xsm
+            font-weight: 700
+
+
+    &__carousel
+        margin: 25px 20px 0px
+        display: flex
+        height: 500px
+        width: 100%
+        // grid-template-columns: repeat(4, 1fr)
+        overflow-x: auto
+        scroll-behavior: smooth
+        gap: 50px
+        // margin: 20px
+        
+    &__card
+        height: 100%
+        width: 250px
+        flex: none
+        text-align: center
+
+        button
+            margin-top: 20px 
+            width: 220px
+            border: none
+
+    &__texto
+        display: grid
+        justify-content: center
+        grid-template-rows: 2fr 1fr 1fr 1fr
+        height: 160px
+        color: $darkgray
+
+    &__nome
+        font-size: $font-md
+        font-weight: 300
+
+    &__oldPreco
+        color: $gray
+        margin-top: 10px
+
+    &__preco
+   
+        font-size: $font-lg
+        margin-top: 5px
+    
+    &__assPreco
+        font-size: $font-md
+        font-weight: 700
+
+    &__leftBtn
+        
