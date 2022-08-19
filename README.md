@@ -1,6 +1,7 @@
 Projeto realizado como teste para uma vaga de front-end junior. <br>
 Aqui estão algumas imagens para visualização <br>
 Infelizmente o teste não está 100% feito <br>
+O app online pode ser visualizado aqui: https://62ff0d25a6c1b735e4828137--glittering-squirrel-494976.netlify.app/
 O teste da build pode ser realizado localmente, por enquanto, <br> efetuando a clonagem do arquivo e utilizando npm start.
 ![image](https://user-images.githubusercontent.com/86805124/185531252-20c8060d-e7de-451b-b3e4-f718e8ff7d95.png)
 ![image](https://user-images.githubusercontent.com/86805124/185531400-805750b1-fc03-4d68-b2ab-3ff075d186c2.png)
