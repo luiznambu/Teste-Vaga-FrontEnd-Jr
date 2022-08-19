@@ -1,12 +1,15 @@
 .categorias
     margin: 57px 57px 0px
+    position: relative
 
     &__cards
+        margin-top: 20px
         height: 277px
         width: 100%
         display: grid
         grid-template-columns: repeat(4, 1fr)
         column-gap: 20px
+        cursor: pointer
 
     &__card
         height: 317px
@@ -17,5 +20,9 @@
             margin-top: 20px
             align-self: center
 
-img
-    border-radius: 20px
+    img
+        border-radius: 20px
+
+    button
+        position: absolute
+    

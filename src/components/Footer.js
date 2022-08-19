@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaFacebookF, FaInstagram, FaYoutube, FaCreditCard } from 'react-icons/fa'
+import {FaFacebookF, FaInstagram, FaYoutube, FaRegCreditCard, FaTicketAlt, FaMoneyCheck, FaMoneyCheckAlt, FaCcVisa, FaCcMastercard } from 'react-icons/fa'
+import {SiLetsencrypt} from 'react-icons/si'
 
 function Footer() {
   return (
@@ -44,17 +45,17 @@ function Footer() {
                 <div className="footer__bandeiras">
                     <h3>FORMAS DE PAGAMENTO</h3>
                     <div className="footer__cartoes">
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
-                        <div className="footer__card"><FaCreditCard size={75}/></div>
+                        <div className="footer__card"><FaMoneyCheckAlt size={75}/></div>
+                        <div className="footer__card"><FaCcVisa size={75}/></div>
+                        <div className="footer__card"><FaCcMastercard size={75}/></div>
+                        <div className="footer__card"><FaMoneyCheck size={75}/></div>
+                        <div className="footer__card"><FaTicketAlt size={75}/></div>
+                        <div className="footer__card"><FaRegCreditCard size={75}/></div>
                     </div>
                 </div>
                 <div className="footer__seguranca">
                         <h3>SEGURANÇA</h3>
-                    <img src="" alt="let's encrypt" />
+                    <div><SiLetsencrypt size={80}/></div>
                 </div>
             </div>
             <div className="footer__direitos">
@@ -64,8 +65,7 @@ function Footer() {
                     <span>© Todos os direitos reservados. 2021</span>
                 </div>
                 <div className="footer__logo">
-                    <img src="" alt="econverse" />
-                    <img src="" alt="VTEX" />
+                    <span>ECONVERSE VTEX</span>
                 </div>
             </div>
         </div>

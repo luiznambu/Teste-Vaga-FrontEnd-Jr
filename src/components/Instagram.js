@@ -7,7 +7,7 @@ function Instagram() {
   return (
     <div className="instagram">
         <h2 className="container">Instagram</h2>
-        <div className="instagram__vitrine">
+        <div className="instagram__vitrine grow">
             <div className="instagram__photo">
                 <img src={insta1} alt="insta1" />
             </div>

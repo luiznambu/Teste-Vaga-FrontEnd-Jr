@@ -4,6 +4,7 @@ import { CaretLeft, CaretRight } from "phosphor-react";
 import Modal from './Modal';
 import '../styles/sass/_modal.sass'
 import { X } from "phosphor-react";
+import produto from '../images/produto.png'
 
 function Produtos() {
   
@@ -56,9 +57,9 @@ function Produtos() {
         </div>
         <div className="produtos__carousel" ref={carousel}>
           {produtos.map(produto => {
-            const { productName, descriptionShort, photo, price } = produto;
+            const { productName, photo, price } = produto;
             return (
-              <div key={productName} className="produtos__card" onClick={() => setIsModalOpen(true)}>
+              <div key={productName} className="produtos__card grow" onClick={() => setIsModalOpen(true)}>
                 <div className="produtos__image">
                   <img src={photo} alt="" />
                 </div>
@@ -81,7 +82,9 @@ function Produtos() {
 
           <div id="modal" className="modal" onClick={handleOutsideClick}>
             <div className="modal__card">
-              <div className="modal__left"></div>
+              <div className="modal__left">
+                <img src={produto} alt="" />
+              </div>
               <div className="modal__right">
                 <button onClick={() => setIsModalOpen(false)} ><X size={32} color="#000"/></button>
                 <h3>Brinquedo Kong Duretreat Ring P</h3>

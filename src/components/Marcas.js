@@ -4,30 +4,33 @@ import marca2 from '../images/marca2.png'
 import marca3 from '../images/marca3.png'
 import banner1 from '../images/banner1.png'
 import banner2 from '../images/banner2.png'
+import { CaretLeft, CaretRight } from "phosphor-react";
 
 function Marcas() {
   return (
-    <div className="container">
+    <div className="marcas container">
         <h2>Principais marcas</h2>
-        <div className="marcas">
-            <div className="marcas__card">
+        <div className="marcas__vitrine">
+            <div className="marcas__card grow">
                 <img src={marca1} alt="marca1" />
             </div>
-            <div className="marcas__card">
+            <div className="marcas__card grow">
                 <img src={marca2} alt="marca2" />
             </div>
-            <div className="marcas__card">
+            <div className="marcas__card grow">
                 <img src={marca3} alt="marca3" />
             </div>
-            <div className="marcas__card">
+            <div className="marcas__card grow">
                 <img src={marca1} alt="marca1" />
             </div>
-            <div className="marcas__card">
+            <div className="marcas__card grow">
                 <img src={marca2} alt="marca2" />
             </div>
-            <div className="marcas__card">
+            <div className="marcas__card grow">
                 <img src={marca3} alt="marca3" />
             </div>
+            <button className="carousel-btn left-btn"><CaretLeft size={24} color="#4D4D4D"/></button>
+            <button className="carousel-btn right-btn"><CaretRight size={24} color="#4D4D4D"/></button>
         </div>
         <div className="marcas__parceiros">
             <div className="marcas__banner gradient" style={{

@@ -1,25 +1,36 @@
 .modal
-    position: absolute
+    position: fixed
     width: 1280px
-    height: 300vh
-    top: -210%
-    left: -5%
+    height: 100vh
+    top: 0
+    left: 0
     z-index: 15
     background-color: rgba(0, 0, 0, 0.5)
     display: flex
     justify-content: center
     align-items: center
-    overflow: hidden
+    overflow-y: hidden
+    
     &__card
+        position: relative
         width: 769px
         height: 355px
         background-color: #fff
         display: grid
         grid-template-columns: repeat(2, 1fr)
-        transform: translateY(-200%)
         align-content: center
+        img
+            border-radius: 0px
+
+    &__left
+        display: flex
+        justify-content: center
 
     &__right
+        display: grid
+        color: #4D4D4D
+        h3, span, a
+            color: #041E50
         button
             position: absolute
             top: 0
