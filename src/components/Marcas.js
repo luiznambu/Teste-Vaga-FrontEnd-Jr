@@ -8,7 +8,7 @@ import { CaretLeft, CaretRight } from "phosphor-react";
 
 function Marcas() {
   return (
-    <div className="marcas container">
+    <main className="marcas container">
         <h2>Principais marcas</h2>
         <div className="marcas__vitrine">
             <div className="marcas__card grow">
@@ -47,15 +47,17 @@ function Marcas() {
 
             </div>
             <div className="marcas__banner banner2">
-                <div className="marcas__text">
+                <div className="marcas__text text2">
                     <h2>Assinatura Cãoselheiro</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor adipiscing quis non sed.</p>
-                    <button>SAIBA MAIS</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor adipiscing quis non sed.</p>            
+                    <div>
+                        <button>SAIBA MAIS</button>
+                    </div>
                 </div>
                 <img src={banner2} alt="banner" />
             </div>
         </div>
-    </div>
+    </main>
   )
 }
 
