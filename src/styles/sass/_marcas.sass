@@ -1,0 +1,51 @@
+.marcas
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-column-gap: 25px
+    height: 178px
+    margin-top: 32px
+
+    &__card
+        height: 178px
+        width: 178px
+        border-radius: 20px
+        box-shadow: 0 5px 8px 5px rgba(126, 126, 126, 0.5)
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__parceiros
+        margin-top: 88px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-column-gap: 25px
+
+    &__banner
+        height: 350px
+        width: 630px
+        border-radius: 25px
+        display: flex
+        flex-direction: column
+        justify-content: end
+        position: relative
+        p
+            margin-top: 20px
+            color: $white
+            font-size: $font-md
+        button
+            margin-top: 30px
+        img
+            position: absolute
+            right: 0
+
+    
+    &__text
+        width: 50%
+        margin: 40px
+    
+.banner2
+    background-color: $orange
+    border-radius: 25px 0px 0px 25px
+    p
+        color: $darkgray
+        font-size: $font-md

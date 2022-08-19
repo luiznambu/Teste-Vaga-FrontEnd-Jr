@@ -1,5 +1,6 @@
 .produtos
-    margin-top: 88px
+    margin-top: 150px
+    position: relative
 
     &__nav
         display: flex
@@ -13,24 +14,25 @@
         button
             font-size: $font-xsm
             font-weight: 700
-
+            width: auto
+            padding: 10px
 
     &__carousel
         margin: 25px 20px 0px
         display: flex
         height: 500px
         width: 100%
-        // grid-template-columns: repeat(4, 1fr)
         overflow-x: auto
         scroll-behavior: smooth
         gap: 50px
-        // margin: 20px
+        overflow: hidden
         
     &__card
         height: 100%
         width: 250px
         flex: none
         text-align: center
+        cursor: pointer
 
         button
             margin-top: 20px 
@@ -62,4 +64,11 @@
         font-weight: 700
 
     &__leftBtn
-        
+        position: absolute
+        left: -25px
+        top: 45%
+    
+    &__rightBtn
+        position: absolute
+        right: -25px
+        top: 40%
